@@ -1,6 +1,17 @@
 <?
+/** @var array $arParams */
+/** @var array $arResult */
+/** @global CMain $APPLICATION */
+/** @global CUser $USER */
+/** @global CDatabase $DB */
+/** @var CBitrixComponentTemplate $this */
+/** @var string $templateName */
+/** @var string $templateFile */
+/** @var string $templateFolder */
+/** @var string $componentPath */
+/** @var CBitrixComponent $component */
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Тестовая");
+$APPLICATION->SetTitle("Тестовая страница");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
 	"horizontal_multilevel_test", 

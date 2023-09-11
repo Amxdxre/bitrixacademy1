@@ -1,23 +1,26 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 <?
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-    <?$APPLICATION->ShowHead();?>
-    <title><?$APPLICATION->ShowTitle()?></title>
-    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/slides.min.jquery.js"></script>
-    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery.carouFredSel-6.1.0-packed.js"></script>
-    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/functions.js"></script>
+    <? $APPLICATION->ShowHead(); ?>
+    <title><? $APPLICATION->ShowTitle() ?></title>
+    <script type="text/javascript" src="/local/templates/main/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/local/templates/main/js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="/local/templates/main/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script type="text/javascript" src="/local/templates/main/js/functions.js"></script>
 
-    <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/local/templates/main/favicon.ico"/>
 
-    <!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+    <!--[if gte IE 9]>
+    <style type="text/css">.gradient {
+        filter: none;
+    }</style><![endif]-->
 </head>
 <body>
-<?$APPLICATION->ShowPanel();?>
+<? $APPLICATION->ShowPanel(); ?>
 <div class="wrap">
     <div class="hd_header_area">
         <div class="hd_header">
@@ -27,8 +30,8 @@ IncludeTemplateLangFile(__FILE__);
                         <h1><a href="">Мебельный магазин</a></h1>
                     </td>
                     <td rowspan="2" class="hd_txarea">
-                        <span class="tel">8 (495) 212-85-06</span>	<br/>
-                        <?GetMessage ('WORKING_TIME')?> <span class="workhours">ежедневно с 9-00 до 18-00</span>
+                        <span class="tel">8 (495) 212-85-06</span> <br/>
+                        <? GetMessage('WORKING_TIME') ?> <span class="workhours">ежедневно с 9-00 до 18-00</span>
                     </td>
                     <td style="width:232px">
                         <form action="">
@@ -46,8 +49,8 @@ IncludeTemplateLangFile(__FILE__);
 								<span class="hd_title_loginform">Войти на сайт</span>
 								<form name="" method="" action="">
 
-									<input placeholder="Логин"  type="text">
-									<input  placeholder="Пароль"  type="password">
+									<input placeholder="Логин" type="text">
+									<input placeholder="Пароль" type="password">
 									<a href="/" class="hd_forgotpassword">Забыли пароль</a>
 
 									<div class="head_remember_me" style="margin-top: 10px">
@@ -65,7 +68,8 @@ IncludeTemplateLangFile(__FILE__);
             </table>
             <div class="nv_topnav">
                 <ul>
-                    <li><a href=""   class="menu-img-fon"  style="background-image: url(images/nv_home.png);" ><span></span></a></li>
+                    <li><a href="" class="menu-img-fon" style="background-image: url(images/nv_home.png);"><span></span></a>
+                    </li>
                     <li><a href=""><span>Компания</span></a>
                         <ul>
                             <li><a href="">Пункт 1</a></li>

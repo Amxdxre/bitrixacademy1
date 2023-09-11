@@ -35,16 +35,17 @@
         <p>Семинар производителей мебели России и СНГ, Обсуждение тенденций.</p>
     </div>
     <div class="sb_action">
-        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/content/11.png" alt=""/></a>
+        <a href=""><img src="<?= SITE_TEMPLATE_PATH ?>/content/11.png" alt=""/></a>
         <h4>Акция</h4>
         <h5><a href="">Мебельная полка всего за 560 Р</a></h5>
         <a href="" class="sb_action_more">Подробнее &rarr;</a>
     </div>
     <div class="sb_reviewed">
-        <img src="<?=SITE_TEMPLATE_PATH?>/content/8.png" class="sb_rw_avatar" alt=""/>
+        <img src="<?= SITE_TEMPLATE_PATH ?>/content/8.png" class="sb_rw_avatar" alt=""/>
         <span class="sb_rw_name">Сергей Антонов</span>
         <span class="sb_rw_job">Руководитель финансового отдела “Банк+”</span>
-        <p>“Покупал офисные стулья и столы, остался очень доволен! Низкие цены, быстрая доставка, обслуживание на высоте! Спасибо!”</p>
+        <p>“Покупал офисные стулья и столы, остался очень доволен! Низкие цены, быстрая доставка, обслуживание на
+            высоте! Спасибо!”</p>
         <div class="clearboth"></div>
         <div class="sb_rw_arrow"></div>
     </div>
@@ -81,7 +82,7 @@
 
         </div>
         <div class="ft_contacts">
-            <h4><?GetMessage ('CONTACT_INFO')?></h4>
+            <h4><? GetMessage('CONTACT_INFO') ?></h4>
             <!-- vCard        http://help.yandex.ru/webmaster/hcard.pdf      -->
             <p class="vcard">
 						<span class="adr">
@@ -96,7 +97,7 @@
                 <li><a href="" class="ok"></a></li>
                 <li><a href="" class="vk"></a></li>
             </ul>
-            <div class="ft_copyright">© 2000 - 2012 "Мебельный магазин" </div>
+            <div class="ft_copyright">© 2000 - 2012 "Мебельный магазин"</div>
 
 
         </div>

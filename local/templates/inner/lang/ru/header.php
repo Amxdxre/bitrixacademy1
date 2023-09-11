@@ -1,3 +1,3 @@
 <?php
-$MESS ['WORKING_TIME']="Время работы";
+$MESS ['WORKING_TIME'] = "Время работы";
 ?>

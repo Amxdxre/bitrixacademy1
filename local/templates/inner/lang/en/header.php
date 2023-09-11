@@ -1,3 +1,3 @@
 <?
-$MESS ['WORKING_TIME']="Working time";
+$MESS ['WORKING_TIME'] = "Working time";
 ?>

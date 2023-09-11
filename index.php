@@ -1,6 +1,5 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-require_once ($_SERVER["DOCUMENT_ROOT"]."/functions-dump.php");
 $APPLICATION->SetTitle("Мебельная компания");
 ?><p>
 Наша компания существует на Российском рынке с 1992 года. За это время «Мебельная компания» прошла большой путь от маленькой торговой фирмы до одного из крупнейших производителей корпусной мебели в России.
@@ -29,4 +28,4 @@ $APPLICATION->SetTitle("Мебельная компания");
 	false
 );?>
 </p>
-</p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.p hp");?>
+</p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

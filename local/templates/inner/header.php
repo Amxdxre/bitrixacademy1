@@ -7,6 +7,7 @@ IncludeTemplateLangFile(__FILE__);
 <head>
     <?php $APPLICATION->ShowHead(); ?>
     <title><?php $APPLICATION->ShowTitle() ?></title>
+    <link rel="stylesheet" href="/local/templates/main/template_styles.css"/>
     <script type="text/javascript" src="/local/templates/main/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="/local/templates/main/js/slides.min.jquery.js"></script>
     <script type="text/javascript" src="/local/templates/main/js/jquery.carouFredSel-6.1.0-packed.js"></script>

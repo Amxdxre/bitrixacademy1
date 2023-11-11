@@ -68,7 +68,7 @@ IncludeTemplateLangFile(__FILE__);
             </table>
             <div class="nv_topnav">
                 <ul>
-                    <li><a href="" class="menu-img-fon" style="background-image: url(images/nv_home.png);"><span></span></a>
+                    <li><a href="" class="menu-img-fon" style="background-image: url(/local/templates/main/images/nv_home.png);"><span></span></a>
                     </li>
                     <li><a href=""><span>Компания</span></a>
                         <ul>

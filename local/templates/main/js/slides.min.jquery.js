@@ -149,7 +149,7 @@
         })
     }, a.fn.slides.option = {
         preload: !1,
-        preloadImage: "images/loading.gif",
+        preloadImage: "/local/templates/main/images/loading.gif",
         container: "slides_container",
         generateNextPrev: !1,
         next: "next",

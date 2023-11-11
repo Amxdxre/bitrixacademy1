@@ -116,7 +116,8 @@ IncludeTemplateLangFile(__FILE__);
             <div class="mn_content">
                 <div class="main_post">
                     <div class="main_title">
+                        <h1>
                         <?php $APPLICATION->ShowTitle(false); ?>
-<!--                        <p class="title">Заголовок страницы</p>-->
+                        </h1>
                     </div>
                     <!-- workarea -->

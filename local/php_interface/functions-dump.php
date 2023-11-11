@@ -1,4 +1,4 @@
-<?
+<?php
 function test_dump($var, $die = false, $all = false)
 {
     global $USER;

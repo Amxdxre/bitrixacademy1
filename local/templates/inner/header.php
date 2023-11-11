@@ -1,12 +1,12 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
-<?
+<?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+<?php
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-    <? $APPLICATION->ShowHead(); ?>
-    <title><? $APPLICATION->ShowTitle() ?></title>
+    <?php $APPLICATION->ShowHead(); ?>
+    <title><?php $APPLICATION->ShowTitle() ?></title>
     <script type="text/javascript" src="/local/templates/main/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="/local/templates/main/js/slides.min.jquery.js"></script>
     <script type="text/javascript" src="/local/templates/main/js/jquery.carouFredSel-6.1.0-packed.js"></script>
@@ -20,7 +20,7 @@ IncludeTemplateLangFile(__FILE__);
     }</style><![endif]-->
 </head>
 <body>
-<? $APPLICATION->ShowPanel(); ?>
+<?php $APPLICATION->ShowPanel(); ?>
 <div class="wrap">
     <div class="hd_header_area">
         <div class="hd_header">
@@ -31,7 +31,7 @@ IncludeTemplateLangFile(__FILE__);
                     </td>
                     <td rowspan="2" class="hd_txarea">
                         <span class="tel">8 (495) 212-85-06</span> <br/>
-                        <? GetMessage('WORKING_TIME') ?> <span class="workhours">ежедневно с 9-00 до 18-00</span>
+                        <?php echo GetMessage('WORKING_TIME'); ?> <span class="workhours">ежедневно с 9-00 до 18-00</span>
                     </td>
                     <td style="width:232px">
                         <form action="">

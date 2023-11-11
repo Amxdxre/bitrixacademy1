@@ -9,10 +9,10 @@ global $APPLICATION;
     <?php $APPLICATION->ShowHead(); ?>
     <title><?php $APPLICATION->ShowTitle() ?></title>
     <link rel="stylesheet" href="/local/templates/main/template_styles.css"/>
-    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="js/slides.min.jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="/local/templates/main/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/local/templates/main/js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="/local/templates/main/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script type="text/javascript" src="/local/templates/main/js/functions.js"></script>
 
     <link rel="shortcut icon" type="image/x-icon" href="/local/templates/main/favicon.ico"/>
 

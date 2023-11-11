@@ -6,7 +6,7 @@ IncludeTemplateLangFile(__FILE__);
 <html lang="en-US">
 <head>
     <?php $APPLICATION->ShowHead(); ?>
-    <title><?php $APPLICATION->ShowTitle() ?></title>
+    <title><?php $APPLICATION->ShowTitle(); ?></title>
     <link rel="stylesheet" href="/local/templates/main/template_styles.css"/>
     <script type="text/javascript" src="/local/templates/main/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="/local/templates/main/js/slides.min.jquery.js"></script>
@@ -116,6 +116,7 @@ IncludeTemplateLangFile(__FILE__);
             <div class="mn_content">
                 <div class="main_post">
                     <div class="main_title">
-                        <p class="title">Заголовок страницы</p>
+                        <?php $APPLICATION->ShowTitle(false); ?>
+<!--                        <p class="title">Заголовок страницы</p>-->
                     </div>
                     <!-- workarea -->

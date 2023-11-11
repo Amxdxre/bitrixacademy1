@@ -1,4 +1,8 @@
 <!-- workarea -->
+<?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+<?php
+IncludeTemplateLangFile(__FILE__);
+?>
 </div>
 </div>
 <div class="sb_sidebar">

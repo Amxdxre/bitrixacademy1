@@ -13,7 +13,7 @@ input {
 
 /* header area */
 .hd_header_area {
-    background: url(images/hd_bg.png);
+    background: url(/local/templates/main/images/hd_bg.png);
     box-shadow: inset 0 -1px 1px 1px rgba(0, 0, 0, .05);
     border-bottom: 1px solid #d7d9dc;
     padding-top: 14px;
@@ -91,7 +91,7 @@ input {
     right: 1px;
     top: 6px;
     border: none;
-    background: url(images/gui.png) 0px -32px no-repeat;
+    background: url(/local/templates/main/images/gui.png) 0px -32px no-repeat;
     cursor: pointer;
 }
 
@@ -489,7 +489,7 @@ input {
     width: 14px;
     margin: 0 10px;
     height: 14px;
-    background: url(images/gui.png) -67px -33px no-repeat;
+    background: url(/local/templates/main/images/gui.png) -67px -33px no-repeat;
     overflow: hidden;
 }
 
@@ -503,13 +503,13 @@ input {
 .sl_slider .pagination li.current,
 .sl_slider .pagination li:hover {
     cursor: pointer;
-    background: url(images/gui.png) -81px -33px no-repeat;
+    background: url(/local/templates/main/images/gui.png) -81px -33px no-repeat;
 }
 
 /*  // end slider area  */
 
 .main_container.homepage {
-    background: url(images/workarea_bg.png);
+    background: url(/local/templates/main/images/workarea_bg.png);
     box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, .05), inset 0 -1px 1px 1px rgba(0, 0, 0, .05);
     border-top: 1px solid #d7d9dc;
     padding-top: 42px;
@@ -517,7 +517,7 @@ input {
 }
 
 .bc_breadcrumbs {
-    background: url(images/workarea_bg.png);
+    background: url(/local/templates/main/images/workarea_bg.png);
     box-shadow: inset 0 1px 1px 1px rgba(0, 0, 0, .05), inset 0 -1px 1px 1px rgba(0, 0, 0, .05);
     padding-bottom: 13px;
 }
@@ -533,7 +533,7 @@ input {
     float: left;
     list-style: none;
     padding: 0 20px;
-    background: url(images/bc_arrow.png) left 65% no-repeat;
+    background: url(/local/templates/main/images/bc_arrow.png) left 65% no-repeat;
 }
 
 .bc_breadcrumbs ul li:first-child {
@@ -1076,7 +1076,7 @@ input {
 }
 
 .cn_hp_post {
-    background: url(images/hp_shadow_left.png) left center no-repeat, url(images/hp_shadow_right.png) right center no-repeat;
+    background: url(/local/templates/main/images/hp_shadow_left.png) left center no-repeat, url(/local/templates/main/images/hp_shadow_right.png) right center no-repeat;
     background-size: 9px 100%;
     padding: 0 40px;
     width: 277px;
@@ -1437,7 +1437,7 @@ input {
     left: 0;
     top: 0;
     cursor: pointer;
-    background: url(images/sb_arrow_close.png) no-repeat center;
+    background: url(/local/templates/main/images/sb_arrow_close.png) no-repeat center;
 }
 
 .sb_nav > ul > li .sb_showchild:hover {
@@ -1445,7 +1445,7 @@ input {
 }
 
 .sb_nav > ul > li.open .sb_showchild {
-    background: url(images/sb_arrow_open.png) no-repeat center;
+    background: url(/local/templates/main/images/sb_arrow_open.png) no-repeat center;
 }
 
 .sb_nav > ul > li > a {
@@ -1586,7 +1586,7 @@ input {
     font-size: 16px;
     padding-left: 15px;
     text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
-    background: url(images/sb_event.png) no-repeat 35px center;
+    background: url(/local/templates/main/images/sb_event.png) no-repeat 35px center;
 }
 
 .sb_event p a {
@@ -1609,7 +1609,7 @@ input {
     border-radius: 3px;
     padding: 20px;
     position: relative;
-    background: url(images/sb_action.png) no-repeat center;
+    background: url(/local/templates/main/images/sb_action.png) no-repeat center;
     margin-bottom: 30px;
 }
 
@@ -1755,7 +1755,7 @@ input {
     width: 30px;
     height: 34px;
     position: absolute;
-    background: url(images/gui.png) -125px 0 no-repeat;
+    background: url(/local/templates/main/images/gui.png) -125px 0 no-repeat;
     bottom: -34px;
     right: 40px;
 }
@@ -1764,7 +1764,7 @@ input {
     width: 35px;
     height: 39px;
     position: absolute;
-    background: url(images/gui.png) -157px 0 no-repeat;
+    background: url(/local/templates/main/images/gui.png) -157px 0 no-repeat;
     bottom: -39px;
     right: 40px;
 }
@@ -1776,7 +1776,7 @@ input {
     width: 14px;
     height: 21px;
     position: absolute;
-    background: url(images/gui.png) -125px 0 no-repeat;
+    background: url(/local/templates/main/images/gui.png) -125px 0 no-repeat;
     cursor: pointer;
 }
 
@@ -1853,7 +1853,7 @@ input {
 
 /* // ft_footer */
 .ft_footer {
-    background: url(images/ft_bg.png);
+    background: url(/local/templates/main/images/ft_bg.png);
     padding: 25px 0;
     box-shadow: inset 0 2px 1px 1px rgba(0, 0, 0, .2);
 
@@ -1960,7 +1960,7 @@ input {
     display: block;
     width: 31px;
     height: 32px;
-    background: url(images/gui.png) no-repeat;
+    background: url(/local/templates/main/images/gui.png) no-repeat;
     opacity: .8;
 }
 
@@ -2242,7 +2242,7 @@ input {
 
 .review-pagination-prew-page:before,
 .review-pagination-next-page:before {
-    background: url("images/ctrl-btns.gif") no-repeat;
+    background: url("/local/templates/main/images/ctrl-btns.gif") no-repeat;
     content: "";
     height: 17px;
     position: absolute;

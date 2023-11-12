@@ -1,4 +1,5 @@
 <?php
+global $APPLICATION;
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Вакансии");
 ?><?php $APPLICATION->IncludeComponent("bitrix:furniture.vacancies", ".default", array(

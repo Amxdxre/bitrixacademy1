@@ -1,4 +1,5 @@
 <?php
+global $APPLICATION;
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetPageProperty("test", "Тестовое значение");
 $APPLICATION->SetPageProperty("title", "Заголовок окна браузера");

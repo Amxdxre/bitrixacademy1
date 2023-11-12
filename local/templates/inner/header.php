@@ -1,6 +1,7 @@
 <?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 <?php
 IncludeTemplateLangFile(__FILE__);
+global $APPLICATION;
 ?>
 <!DOCTYPE HTML>
 <html lang="en-US">

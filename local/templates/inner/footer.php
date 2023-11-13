@@ -60,15 +60,23 @@ IncludeTemplateLangFile(__FILE__);
 
 <div class="ft_footer">
     <div class="ft_container">
-        <div class="ft_about">
-            <h4>О магазине</h4>
-            <ul>
-                <li><a href="">Отзывы</a></li>
-                <li><a href="">Контакты</a></li>
-                <li><a href="">Руководство</a></li>
-                <li><a href="">История</a></li>
-            </ul>
-        </div>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:menu",
+            "ft_about_menu",
+            Array(
+                "ALLOW_MULTI_SELECT" => "N",
+                "CHILD_MENU_TYPE" => "left",
+                "COMPONENT_TEMPLATE" => ".default",
+                "DELAY" => "N",
+                "MAX_LEVEL" => "1",
+                "MENU_CACHE_GET_VARS" => "",
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_TYPE" => "N",
+                "MENU_CACHE_USE_GROUPS" => "Y",
+                "ROOT_MENU_TYPE" => "bottom",
+                "USE_EXT" => "N"
+            )
+        );?>
         <div class="ft_catalog">
             <h4>Каталог товаров</h4>
             <ul>

@@ -33,7 +33,8 @@ global $APPLICATION;
                     </td>
                     <td rowspan="2" class="hd_txarea">
                         <span class="tel">8 (495) 212-85-06</span> <br/>
-                        <?php echo GetMessage('WORKING_TIME'); ?> <span class="workhours">ежедневно с 9-00 до 18-00</span>
+                        <?php echo GetMessage('WORKING_TIME'); ?> <span
+                                class="workhours">ежедневно с 9-00 до 18-00</span>
                     </td>
                     <td style="width:232px">
                         <form action="">
@@ -68,38 +69,22 @@ global $APPLICATION;
                     </td>
                 </tr>
             </table>
-            <div class="nv_topnav">
-                <ul>
-                    <li><a href="" class="menu-img-fon" style="background-image: url(/local/templates/main/images/nv_home.png);"><span></span></a>
-                    </li>
-                    <li><a href=""><span>Компания</span></a>
-                        <ul>
-                            <li><a href="">Пункт 1</a></li>
-                            <li><a href="">Пункт 2</a></li>
-                            <li><a href="">Пункт 3</a></li>
-                            <li><a href="">Пункт 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href=""><span>Новости</span></a></li>
-                    <li><a href=""><span>Каталог</span></a></li>
-                    <li><a href=""><span>Акции</span></a>
-                        <ul>
-                            <li><a href="">Пункт 1</a>
-                                <ul>
-                                    <li><a href="">Пункт 1</a></li>
-                                    <li><a href="">Пункт 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">Пункт 2</a></li>
-                            <li><a href="">Пункт 3</a></li>
-                            <li><a href="">Пункт 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href=""><span>Партнерам</span></a></li>
-                    <li><a href=""><span>Контакты</span></a></li>
-                    <div class="clearboth"></div>
-                </ul>
-            </div>
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "top_multi_menu",
+                array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "left",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "2",
+                    "MENU_CACHE_GET_VARS" => array(0 => "",),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "N",
+                    "MENU_CACHE_USE_GROUPS" => "Y",
+                    "ROOT_MENU_TYPE" => "top",
+                    "USE_EXT" => "N"
+                )
+            ); ?>
         </div>
     </div>
 
@@ -118,7 +103,7 @@ global $APPLICATION;
                 <div class="main_post">
                     <div class="main_title">
                         <h1>
-                        <?php $APPLICATION->ShowTitle(false); ?>
+                            <?php $APPLICATION->ShowTitle(false); ?>
                         </h1>
                     </div>
                     <!-- workarea -->

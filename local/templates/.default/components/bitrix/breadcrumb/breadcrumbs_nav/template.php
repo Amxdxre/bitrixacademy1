@@ -1,13 +1,12 @@
 <?php
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
-
 /**
  * @global CMain $APPLICATION
  */
 
 global $APPLICATION;
-
-//delayed function must return a string
+Bitrix\Main\Diag\Debug::dumpToFile($arResult,'$arResult','__breadcrumb.htm');
+Bitrix\Main\Diag\Debug::dumpToFile($arParams,'$arParams','__breadcrumb.htm');
 if (empty($arResult))
     return "";
 

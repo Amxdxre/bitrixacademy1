@@ -39,13 +39,13 @@ IncludeTemplateLangFile(__FILE__);
         <p>Семинар производителей мебели России и СНГ, Обсуждение тенденций.</p>
     </div>
     <div class="sb_action">
-        <a href=""><img src="/local/templates/main/content/11.png" alt=""/></a>
+        <a href=""><img src="/local/templates/.default/content/11.png" alt=""/></a>
         <h4>Акция</h4>
         <h5><a href="">Мебельная полка всего за 560 Р</a></h5>
         <a href="" class="sb_action_more">Подробнее &rarr;</a>
     </div>
     <div class="sb_reviewed">
-        <img src="/local/templates/main/content/8.png" class="sb_rw_avatar" alt=""/>
+        <img src="/local/templates/.default/content/8.png" class="sb_rw_avatar" alt=""/>
         <span class="sb_rw_name">Сергей Антонов</span>
         <span class="sb_rw_job">Руководитель финансового отдела “Банк+”</span>
         <p>“Покупал офисные стулья и столы, остался очень доволен! Низкие цены, быстрая доставка, обслуживание на

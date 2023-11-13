@@ -4,7 +4,7 @@ $aMenuLinks = Array(
 		"", 
 		"/", 
 		Array(), 
-		Array("IMG"=>"/local/templates/main/images/nv_home.png"), 
+		Array("IMG"=>"/local/templates/.default/images/nv_home.png"),
 		"" 
 	),
 	Array(

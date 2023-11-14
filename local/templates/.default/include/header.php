@@ -35,27 +35,16 @@ global $APPLICATION;
             </td>
         </tr>
         <tr>
-            <td style="padding-top: 11px;">
-							<span class="hd_singin"><a id="hd_singin_but_open" href="">Войти на сайт</a>
-							<div class="hd_loginform">
-								<span class="hd_title_loginform">Войти на сайт</span>
-								<form name="" method="" action="">
-
-									<input placeholder="Логин" type="text">
-									<input placeholder="Пароль" type="password">
-									<a href="/" class="hd_forgotpassword">Забыли пароль</a>
-
-									<div class="head_remember_me" style="margin-top: 10px">
-										<input id="USER_REMEMBER_frm" name="USER_REMEMBER" value="Y" type="checkbox">
-										<label for="USER_REMEMBER_frm" title="Запомнить меня на этом компьютере">Запомнить меня</label>
-									</div>
-									<input value="Войти" name="Login" style="margin-top: 20px;" type="submit">
-									</form>
-								<span class="hd_close_loginform">Закрыть</span>
-							</div>
-							</span><br>
-                <a href="" class="hd_signup">Зарегистрироваться</a>
-            </td>
+            <td style="padding-top: 11px;"><?$APPLICATION->IncludeComponent(
+                    "bitrix:system.auth.form",
+                    "auth",
+                    Array(
+                        "FORGOT_PASSWORD_URL" => "/user/",
+                        "PROFILE_URL" => "/user/profile.php",
+                        "REGISTER_URL" => "/user/registration.php",
+                        "SHOW_ERRORS" => "Y"
+                    )
+                );?></td>
         </tr>
     </table>
     <? $APPLICATION->IncludeComponent(

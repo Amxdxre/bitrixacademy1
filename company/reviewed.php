@@ -2,7 +2,7 @@
 global $APPLICATION;
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetPageProperty("test", "Тестовое значение");
-$APPLICATION->SetPageProperty("title", "Заголовок окна браузера");
+$APPLICATION->SetPageProperty("title", "Отзывы");
 $APPLICATION->SetPageProperty("keywords", "Отзывы, компания, мебель");
 $APPLICATION->SetPageProperty("description", "Отзывы о компании");
 $APPLICATION->SetTitle("Отзывы");

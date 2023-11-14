@@ -46,7 +46,17 @@ global $APPLICATION;
 						<span class="adr">
 							<span class="street-address">ул. Летняя стр.12, офис 512</span>
 						</span>
-                <span class="tel">8 (495) 212-85-06</span>
+                <span class="tel"><?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_RECURSIVE" => "Y",
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/phone.php"
+                        )
+                    );?></span>
                 <strong><?php echo GetMessage('WORKING_TIME'); ?></strong> <br/> <span class="workhours">ежедневно с 9-00 до 18-00</span><br/>
             </p>
             <ul class="ft_solcial">

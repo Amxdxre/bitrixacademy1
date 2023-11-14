@@ -32,7 +32,17 @@ global $APPLICATION;
                         <h1><a href="">Мебельный магазин</a></h1>
                     </td>
                     <td rowspan="2" class="hd_txarea">
-                        <span class="tel">8 (495) 212-85-06</span> <br/>
+                        <span class="tel"><?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_RECURSIVE" => "Y",
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "inc",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/include/phone.php"
+                                )
+                            );?></span> <br/>
                         <?php echo GetMessage('WORKING_TIME'); ?> <span
                                 class="workhours">ежедневно с 9-00 до 18-00</span>
                     </td>

@@ -18,5 +18,4 @@ $APPLICATION->SetTitle("Вакансии");
     false
 );
 ?>
-    <p>keywords - <?php $APPLICATION->ShowProperty("keywords") ?></p>
 <?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

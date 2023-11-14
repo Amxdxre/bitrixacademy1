@@ -1,6 +1,7 @@
 <?php
 global $APPLICATION;
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Миссия и стратегия");
 $APPLICATION->SetTitle("Миссия и стратегия");
 ?>
     <p><b>&laquo;Мебельная компания&raquo;</b> - динамично развивающееся производственное предприятие, которое имеет

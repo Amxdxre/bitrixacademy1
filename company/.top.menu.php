@@ -2,28 +2,49 @@
 $aMenuLinks = Array(
 	Array(
 		"", 
-		"", 
+		"/", 
 		Array(), 
-		Array(), 
+		Array("IMG"=>"/local/templates/.default/images/nv_home.png"), 
 		"" 
 	),
 	Array(
 		"Компания", 
-		"company/", 
+		"/company/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Новости", 
-		"news/", 
+		"/news/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Каталог", 
-		"products/", 
+		"/products/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Акции", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнерам", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 

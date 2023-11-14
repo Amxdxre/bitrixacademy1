@@ -1,46 +1,46 @@
-<?php
-$aMenuLinks = array(
-    array(
-        "О компании",
-        "./",
-        array(),
-        array(),
-        ""
-    ),
-    array(
-        "Руководство",
-        "management.php",
-        array(),
-        array(),
-        ""
-    ),
-    array(
-        "Миссия и стратегия",
-        "mission.php",
-        array(),
-        array(),
-        ""
-    ),
-    array(
-        "История",
-        "history.php",
-        array(),
-        array(),
-        ""
-    ),
-    array(
-        "Вакансии",
-        "vacancies.php",
-        array(),
-        array(),
-        ""
-    ),
-    array(
-        "Отзывы",
-        "/company/reviewed.php",
-        array(),
-        array(),
-        ""
-    )
+<?
+$aMenuLinks = Array(
+	Array(
+		"О компании", 
+		"/company/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Руководство", 
+		"management.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Миссия и стратегия", 
+		"mission.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"История", 
+		"history.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Вакансии", 
+		"vacancies.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"reviewed.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
 );
 ?>

@@ -34,6 +34,6 @@ $this->setFrameMode(true);
         </ul>
         <div id="rwprev"></div>
         <div id="rwnext"></div>
-        <a href="" class="rw_allreviewed">Все отзывы</a>
+        <a href="/company/reviewed.php" class="rw_allreviewed">Все отзывы</a>
     </div>
 </div>

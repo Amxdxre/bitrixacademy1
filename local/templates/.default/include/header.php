@@ -26,12 +26,14 @@ global $APPLICATION;
                     class="workhours">ежедневно с 9-00 до 18-00</span>
             </td>
             <td style="width:232px">
-                <form action="">
-                    <div class="hd_search_form" style="float:right;">
-                        <input placeholder="Поиск" type="text"/>
-                        <input type="submit" value=""/>
-                    </div>
-                </form>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:search.form",
+                    "search",
+                    Array(
+                        "PAGE" => "#SITE_DIR#search/index.php",
+                        "USE_SUGGEST" => "N"
+                    )
+                );?>
             </td>
         </tr>
         <tr>

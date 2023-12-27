@@ -13,12 +13,15 @@
 $this->setFrameMode(true);
 ?>
 
-<div class="sb_action">
-    <? foreach ($arResult["ITEMS"] as $arItem): ?>
-        <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>"><? if (is_array($arItem["PREVIEW_PICTURE"])): ?><img
-            src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt=""/></a><? endif; ?>
+<? foreach ($arResult["ITEMS"] as $arItem): ?>
+    <div class="sb_action">
+        <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>"><? if (is_array($arItem["PREVIEW_PICTURE"])): ?>
+            <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" alt=""/></a>
+        <? endif; ?>
         <h4>Акция</h4>
-        <h5><a href="">Мебельная полка всего за <?= $arItem["PROPERTIES"]['PRICE']['VALUE'] ?> Р </a></h5>
+        <h5>
+        <a href="">Мебельная полка всего за <?= $arItem["PROPERTIES"]['PRICE']['VALUE'] ?> Р </a>
+        </h5>
         <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="sb_action_more">Подробнее &rarr;</a>
-    <? endforeach; ?>
-</div>
+    </div>
+<? endforeach; ?>

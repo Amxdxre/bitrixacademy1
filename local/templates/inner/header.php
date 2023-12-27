@@ -4,16 +4,15 @@ IncludeTemplateLangFile(__FILE__);
 global $APPLICATION;
 ?>
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="<?= LANGUAGE_ID?>">
 <head>
     <?php $APPLICATION->ShowHead(); ?>
     <title><?php $APPLICATION->ShowTitle(); ?></title>
-    <link rel="stylesheet" href="/local/templates/.default/template_styles.css"/>
-    <script type="text/javascript" src="/local/templates/.default/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/local/templates/.default/js/slides.min.jquery.js"></script>
-    <script type="text/javascript" src="/local/templates/.default/js/jquery.carouFredSel-6.1.0-packed.js"></script>
-    <script type="text/javascript" src="/local/templates/.default/js/functions.js"></script>
-
+    <?php
+    $APPLICATION->SetAdditionalCSS('/local/templates/.default/template_styles.css');
+    $APPLICATION->AddHeadScript('/local/templates/.default/js/jquery-1.8.2.min.js');
+    $APPLICATION->AddHeadScript('/local/templates/.default/js/functions.js');
+    ?>
     <link rel="shortcut icon" type="image/x-icon" href="/local/templates/.default/favicon.ico"/>
 
     <!--[if gte IE 9]>
@@ -44,7 +43,9 @@ global $APPLICATION;
                 <div class="main_post">
                     <div class="main_title">
                         <h1>
-                            <?php $APPLICATION->ShowTitle(false); ?>
+                            <?php $APPLICATION->ShowTitle(false);
+                            $APPLICATION->ShowViewContent('rating');
+                            ?>
                         </h1>
                     </div>
                     <!-- workarea -->

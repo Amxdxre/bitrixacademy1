@@ -1,6 +1,4 @@
-<?
+<?php
 $sSectionName = "Расписание мероприятий";
-$arDirProperties = Array(
-
-);
+$arDirProperties = array();
 ?>

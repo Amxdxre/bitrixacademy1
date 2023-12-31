@@ -1,7 +1,7 @@
-<?
+<?php
 $sSectionName = "Партнерам";
-$arDirProperties = Array(
-   "description" => "Выгодное предложение",
-   "keywords" => "скидка,распродажа"
+$arDirProperties = array(
+    "description" => "Выгодное предложение",
+    "keywords" => "скидка,распродажа"
 );
 ?>

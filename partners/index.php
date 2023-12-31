@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Условия сотрудничества");
         <tr>
             <td>
                 <p>
-                    <img src="/upload/1.png">
+                    <img style="min-width: 300px; min-height: 250px; max-height: 250px; max-width: 300px" src="/upload/1.png">
                 </p>
             </td>
             <td>

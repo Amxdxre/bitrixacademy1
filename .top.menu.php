@@ -1,39 +1,39 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
-$aMenuLinks = Array(
-	Array(
-		"Компания", 
-		"company/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Новости", 
-		"news/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Продукция", 
-		"products/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Контакты",
-		"contacts/",
-		Array(),
-		Array(),
-		""
-	),
-    Array(
+<?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+<?php
+$aMenuLinks = array(
+    array(
+        "Компания",
+        "company/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Новости",
+        "news/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Продукция",
+        "products/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Контакты",
+        "contacts/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
         "Партнерам",
         "partners/",
-        Array(),
-        Array(),
+        array(),
+        array(),
         ""
     )
 );

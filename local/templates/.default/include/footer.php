@@ -64,7 +64,7 @@ global $APPLICATION;
             <li><a href="" class="ok"></a></li>
             <li><a href="" class="vk"></a></li>
         </ul>
-        <div class="ft_copyright">© 2000 - 2012 "Мебельный магазин"</div>
+        <div class="ft_copyright">© 2000 - 2012 "<?php echo GetMessage('FURNITURE_SHOP'); ?>"</div>
 
 
     </div>

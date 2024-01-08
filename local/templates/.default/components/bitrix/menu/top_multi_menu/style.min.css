@@ -1,7 +1,7 @@
 #horizontal-multilevel-menu, #horizontal-multilevel-menu ul {
     margin: 0;
     padding: 0;
-    background: #bc262c url(images/header_menu_bg.gif) repeat-x;
+    background: #bc262c url(/local/templates/.default/images/header_menu_bg.gif) repeat-x;
     min-height: 27px;
     width: 100%;
     list-style: none;
@@ -39,11 +39,11 @@
 }
 
 #horizontal-multilevel-menu a.parent {
-    background: url(images/arrow.gif) center right no-repeat
+    background: url(/local/templates/.default/images/arrow.gif) center right no-repeat
 }
 
 #horizontal-multilevel-menu a.denied {
-    background: url(images/lock.gif) center right no-repeat
+    background: url(/local/templates/.default/images/lock.gif) center right no-repeat
 }
 
 #horizontal-multilevel-menu li:hover, #horizontal-multilevel-menu li.jshover {

@@ -44,8 +44,8 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Тестовый раздел", 
-		"/company/testrazdel", 
-		Array(),
+		"/company/testrazdel/", 
+		Array(), 
 		Array(), 
 		"" 
 	)

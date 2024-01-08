@@ -7,9 +7,9 @@ $APPLICATION->SetPageProperty("keywords", "Отзывы, компания, ме�
 $APPLICATION->SetPageProperty("description", "Отзывы о компании");
 $APPLICATION->SetTitle("Отзывы");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"reviews_list",
-	Array(
+	"bitrix:news.list", 
+	"reviews_list", 
+	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
@@ -29,11 +29,14 @@ $APPLICATION->SetTitle("Отзывы");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(0=>"",1=>"",),
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "6",
-		"IBLOCK_TYPE" => "content",
+		"IBLOCK_TYPE" => "20",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
@@ -48,7 +51,11 @@ $APPLICATION->SetTitle("Отзывы");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(0=>"JOB_TITLE",1=>"COMPANY_NAME",2=>"",),
+		"PROPERTY_CODE" => array(
+			0 => "JOB_TITLE",
+			1 => "COMPANY_NAME",
+			2 => "",
+		),
 		"SET_BROWSER_TITLE" => "N",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "N",
@@ -60,6 +67,8 @@ $APPLICATION->SetTitle("Отзывы");
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
-		"STRICT_SECTION_CHECK" => "N"
-	)
+		"STRICT_SECTION_CHECK" => "N",
+		"COMPONENT_TEMPLATE" => "reviews_list"
+	),
+	false
 );?><?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

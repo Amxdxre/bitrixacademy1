@@ -4,7 +4,7 @@ $aMenuLinks = Array(
 		"", 
 		"/", 
 		Array(), 
-		Array("IMG"=>"/local/templates/.default/images/nv_home.png"),
+		Array("IMG"=>"/local/templates/.default/images/nv_home.png"), 
 		"" 
 	),
 	Array(
@@ -30,14 +30,14 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Акции", 
-		"/", 
+		"stock/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Партнерам", 
-		"/", 
+		"partners/", 
 		Array(), 
 		Array(), 
 		"" 

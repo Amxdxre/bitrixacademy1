@@ -20,7 +20,7 @@ $this->setFrameMode(true);
         <? endif; ?>
         <h4>Акция</h4>
         <h5>
-        <a href="">Мебельная полка всего за <?= $arItem["PROPERTIES"]['PRICE']['VALUE'] ?> Р </a>
+        <a href=""><?= $arItem["NAME"]?> всего за <?= $arItem["PROPERTIES"]['PRICE']['VALUE'] ?>₽ </a>
         </h5>
         <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="sb_action_more">Подробнее &rarr;</a>
     </div>

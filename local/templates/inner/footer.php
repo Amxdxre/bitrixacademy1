@@ -66,11 +66,11 @@ IncludeTemplateLangFile(__FILE__);
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "7",
-		"IBLOCK_TYPE" => "content",
+		"IBLOCK_TYPE" => "20",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "20",
+		"NEWS_COUNT" => "1",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -103,16 +103,18 @@ IncludeTemplateLangFile(__FILE__);
 );?>
 
     <?$APPLICATION->IncludeComponent(
-        "bitrix:main.include",
-        "",
-        Array(
-            "AREA_FILE_RECURSIVE" => "Y",
-            "AREA_FILE_SHOW" => "sect",
-            "AREA_FILE_SUFFIX" => "inc",
-            "EDIT_TEMPLATE" => "",
-            "PATH" => "/include/"
-        )
-    );?>
+	"bitrix:main.include", 
+	".default", 
+	array(
+		"AREA_FILE_RECURSIVE" => "Y",
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/area.php",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?>
 
     <?$APPLICATION->IncludeComponent(
         "bitrix:news.list",

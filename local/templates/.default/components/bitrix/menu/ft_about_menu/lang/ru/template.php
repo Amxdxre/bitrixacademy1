@@ -1,3 +1,3 @@
 <?
-$MESS['ABOUT_SHOP'] = 'О Магазине';
+$MESS['ABOUT_SHOP'] = '«О магазине»';
 ?>

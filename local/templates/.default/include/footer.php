@@ -6,22 +6,24 @@ global $APPLICATION;
 
 <div class="ft_container">
     <?$APPLICATION->IncludeComponent(
-        "bitrix:menu",
-        "ft_about_menu",
-        Array(
-            "ALLOW_MULTI_SELECT" => "N",
-            "CHILD_MENU_TYPE" => "left",
-            "COMPONENT_TEMPLATE" => ".default",
-            "DELAY" => "N",
-            "MAX_LEVEL" => "1",
-            "MENU_CACHE_GET_VARS" => "",
-            "MENU_CACHE_TIME" => "3600",
-            "MENU_CACHE_TYPE" => "N",
-            "MENU_CACHE_USE_GROUPS" => "Y",
-            "ROOT_MENU_TYPE" => "bottom",
-            "USE_EXT" => "N"
-        )
-    );?>
+	"bitrix:menu",
+	"ft_about_menu",
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"COMPONENT_TEMPLATE" => "ft_about_menu",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "about_magazine",
+		"USE_EXT" => "N"
+	),
+	false
+);?>
     <div class="ft_catalog">
         <h4>Каталог товаров</h4>
         <ul>
@@ -64,7 +66,7 @@ global $APPLICATION;
             <li><a href="" class="ok"></a></li>
             <li><a href="" class="vk"></a></li>
         </ul>
-        <div class="ft_copyright">© 2000 - 2012 "<?php echo GetMessage('FURNITURE_SHOP'); ?>"</div>
+        <div class="ft_copyright"><?php echo GetMessage('FURNITURE_SHOP'); ?></div>
 
 
     </div>

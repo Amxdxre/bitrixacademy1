@@ -28,7 +28,7 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
             <span class="ps_date"><? echo $arItem["DISPLAY_ACTIVE_FROM"] ?></span>
     </div>
     <div class="ps_content">
-        <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" align="left" alt=""/>
+        <img src="<?= $arItem["PREVIEW_PICTURE"]["src"] ?>" align="left" alt=""/>
         <p><? echo $arItem["PREVIEW_TEXT"]; ?></p><br>
         <p><? echo $arItem["DETAIL_TEXT"]; ?></p>
         <div style="clear:both"></div>

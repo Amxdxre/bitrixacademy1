@@ -24,5 +24,5 @@ $this->setFrameMode(true);
     <p><? echo $arResult["DETAIL_TEXT"]; ?></p>
 <?php
 if ($arResult['AUTHOR']):?>
-    Автор: <?php echo $arResult['AUTHOR']['NAME']?>
+    Автор: <?php echo $arResult['AUTHOR'][0];?> <?php echo $arResult['AUTHOR'][1]?>
 <?php endif ?>

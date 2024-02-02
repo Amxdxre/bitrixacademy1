@@ -6,6 +6,5 @@ if (is_array('AUTHOR')) {
     $str = $arResult['NAME'];
 }
 
-echo $str;
 
 $APPLICATION->SetPageProperty('description', $str);

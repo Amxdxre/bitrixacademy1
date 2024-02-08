@@ -23,3 +23,15 @@ $arTemplateParameters = array(
 		"DEFAULT" => "Y",
 	),
 );
+
+$arTemplateParameters["LIST_PREV_PICT_H"] = array(
+    "NAME" => GetMessage("LIST_PREV_PICT_H"),
+    "TYPE" => "STRING",
+    "DEFAULT" => "100",
+);
+
+$arTemplateParameters["LIST_PREV_PICT_W"] = array(
+    "NAME" => GetMessage("LIST_PREV_PICT_W"),
+    "TYPE" => "STRING",
+    "DEFAULT" => "100",
+);

@@ -13,6 +13,11 @@
 $this->setFrameMode(true);
 ?>
 
+<?php
+$APPLICATION->AddHeadScript('/local/templates/.default/js/slides.min.jquery.js');
+$APPLICATION->AddHeadScript('/local/templates/.default/js/jquery-1.8.2.min.js');
+?>
+
 <script type="text/javascript">
     $().ready(function () {
         $(function () {
@@ -26,20 +31,20 @@ $this->setFrameMode(true);
         });
     });
 </script>
-<? foreach ($arResult["ITEMS"] as $arItem): ?>
 <div class="sl_slider" id="slides">
     <div class="slides_container">
+        <? foreach ($arResult["ITEMS"] as $arItem): ?>
             <div>
                 <div>
                     <? if (is_array($arItem["PREVIEW_PICTURE"])):?>
-                        <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt=""/>
+                        <a href="<?=$arResult['ELEM'][$arItem['PROPERTIES']['LINK_SYKA_BLYAT']['VALUE']]['DETAIL_PAGE_URL'] ?>"><img style="width: <?= $arParams['LIST_PREV_PICT_W']?>;height: <?= $arParams['LIST_PREV_PICT_H']?>;" src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt=""/></a>
                     <? endif; ?>
-                    <h2><a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>"><? echo $arItem["NAME"];?></a></h2>
-                    <p><? echo $arItem["PREVIEW_TEXT"]?></p>
-                    <a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>" class="sl_more">Подробнее &rarr;</a>
+                    <h2><a><?=$arResult['ELEM'][$arItem['PROPERTIES']['LINK_SYKA_BLYAT']['VALUE']]['NAME'] ?></a></h2>
+                    <p><?=$arResult['ELEM'][$arItem['PROPERTIES']['LINK_SYKA_BLYAT']['VALUE']]['NAME'] ?> всего за <?=$arResult['ELEM'][$arItem['PROPERTIES']['LINK_SYKA_BLYAT']['VALUE']]['PROPERTY_PRICE_VALUE'] ?> руб.</p>
+                    <a href="<?=$arResult['ELEM'][$arItem['PROPERTIES']['LINK_SYKA_BLYAT']['VALUE']]['DETAIL_PAGE_URL'] ?>" class="sl_more">Подробнее →</a>
                 </div>
             </div>
+        <? endforeach; ?>
     </div>
 </div>
-<? endforeach; ?>
 

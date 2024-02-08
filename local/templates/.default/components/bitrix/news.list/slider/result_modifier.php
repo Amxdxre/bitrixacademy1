@@ -28,7 +28,6 @@ while ($arRes = $BDRes->GetNext())
 {
     $arResult['ELEM'][$arRes['ID']] = $arRes;
 }
-dump($arResult['ELEM']);
 ?>
 
 

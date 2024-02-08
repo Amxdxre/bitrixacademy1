@@ -26,10 +26,9 @@ $this->setFrameMode(true);
         });
     });
 </script>
-
+<? foreach ($arResult["ITEMS"] as $arItem): ?>
 <div class="sl_slider" id="slides">
     <div class="slides_container">
-        <? foreach ($arResult["ITEMS"] as $arItem): ?>
             <div>
                 <div>
                     <? if (is_array($arItem["PREVIEW_PICTURE"])):?>
@@ -40,18 +39,7 @@ $this->setFrameMode(true);
                     <a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>" class="sl_more">Подробнее &rarr;</a>
                 </div>
             </div>
-        <? endforeach; ?>
-        <? foreach ($arResult["ITEMS"] as $arItem): ?>
-            <div>
-                <div>
-                    <? if (is_array($arItem["PREVIEW_PICTURE"])):?>
-                        <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt=""/>
-                    <? endif; ?>
-                    <h2><a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>"><? echo $arItem["NAME"];?></a></h2>
-                    <p><? echo $arItem["PREVIEW_TEXT"]?></p>
-                    <a href="<?=$arItem["PROPERTIES"]['LINK']['VALUE']?>" class="sl_more">Подробнее &rarr;</a>
-                </div>
-            </div>
-        <? endforeach; ?>
     </div>
 </div>
+<? endforeach; ?>
+

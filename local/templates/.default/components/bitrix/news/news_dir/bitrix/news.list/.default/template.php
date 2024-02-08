@@ -13,11 +13,11 @@
     ?>
 
     <div id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-        <div class="ps_head"><a class="ps_head_link" href="<?= $arItem["DETAIL_PAGE_URL"] ?>"><h2 class="ps_head_h"><? echo $arItem["NAME"] ?></h2></a>
+        <div class="ps_head"><a class="ps_head_link" href="<? echo $link ?>"><h2 class="ps_head_h"><? echo $name; ?></h2></a>
             <span class="ps_date"><? echo $arItem["DISPLAY_ACTIVE_FROM"] ?></span>
         </div>
         <div class="ps_content">
-            <img style="width: <?=$arParams['LIST_PREV_PICT_W'] ?>;height: <?= $arParams['LIST_PREV_PICT_H']?>;" src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" align="left" alt=""/>
+            <img style="width: <?= $arParams['LIST_PREV_PICT_W']?>;height: <?= $arParams['LIST_PREV_PICT_H']?>;" src="<? echo $arItem['PREVIEW_PICTURE']['SRC']; ?>" align="left" alt=""/>
             <p><? echo $arItem["PREVIEW_TEXT"]; ?></p><br>
             <p><? echo $name; ?> всего за <?= $arItem["PROPERTIES"]['PRICE']['VALUE'] ?> руб. </p>
             <div style="clear:both"></div>

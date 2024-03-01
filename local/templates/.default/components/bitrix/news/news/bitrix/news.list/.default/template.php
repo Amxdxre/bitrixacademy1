@@ -39,3 +39,5 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
     <br /><?=$arResult["NAV_STRING"]?>
 <?endif;?>
+
+
